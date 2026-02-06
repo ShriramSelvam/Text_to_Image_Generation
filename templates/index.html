@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Text to Image Generator</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Text to Image Generator</h1>
+
+    <input id="prompt" placeholder="Enter prompt">
+    <input id="negative" placeholder="Negative prompt (optional)">
+
+    <div class="row">
+        <input id="seed" type="number" value="123456">
+        <select id="size">
+            <option value="512">512 × 512</option>
+            <option value="768">768 × 768</option>
+        </select>
+    </div>
+
+    <button onclick="generateImage()">Generate Image</button>
+
+    <div id="loading" class="loading">
+        ⏳ Generating image… CPU mode is slow
+    </div>
+
+    <div id="result"></div>
+
+    <h2>🕘 Prompt History</h2>
+    <div id="gallery"></div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

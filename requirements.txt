@@ -1,7 +1,10 @@
-streamlit
+fastapi
+uvicorn
+jinja2
+python-multipart
+pillow
 torch
 diffusers
 transformers
 accelerate
 safetensors
-Pillow
